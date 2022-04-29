@@ -54,7 +54,7 @@ const defaultMenu = {
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 	let tags
 	let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'anime', 'update', 'maker', 'edukasi', 'news', 'random', 'game', 'xp', 'islamic', 'stiker', 'rpg', 'kerangajaib', 'quotes', 'admin', 'grup', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database', 'vote', 'nsfw', 'audio', 'jadibot', 'info', 'owner', 'nocategory']
+  let arrayMenu = ['all', 'anime', 'update', 'maker', 'edukasi', 'news', 'random', 'game', 'xp', 'islamic', 'stiker', 'rpg', 'kerangajaib', 'quotes', 'admin', 'group', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database', 'vote', 'nsfw', 'audio', 'jadibot', 'info', 'owner', 'nocategory']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
   'main': 'Main',
@@ -436,7 +436,7 @@ const listMessage = {
     //------------------< MENU >----------------
     
     //------------------ SIMPLE
-    conn.reply(m.chat, text, fkon, { contextInfo: { mentionedJid: [m.sender],
+    /*conn.reply(m.chat, text, fkon, { contextInfo: { mentionedJid: [m.sender],
         externalAdReply: {
             title: `${htjava} ${namebot}`,
             body: titlebot,
@@ -446,7 +446,7 @@ const listMessage = {
          mediaUrl: sig
         }
      }
-    })
+    })*/
     
     //------------------ DOCUMENT
     let d1 = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
@@ -499,7 +499,7 @@ const listMessage = {
                 },
             ]
         }
-        //await conn.sendMessage(m.chat, message)
+        await conn.sendMessage(m.chat, message)
         
     //------------------- BUTTON VID
     //conn.sendButton(m.chat, text, wm, 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4', [['Ping', '.ping'],['Owner', '.owner'],['Donasi', '.donasi']],ftoko, { gifPlayback: true, contextInfo: { externalAdReply: {title: namebot, body: bottime, sourceUrl: sig, thumbnail: fs.readFileSync('./thumbnail.jpg') }}})
