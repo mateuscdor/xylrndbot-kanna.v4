@@ -218,7 +218,7 @@ export async function handler(chatUpdate) {
                     atm: 0,
                     fullatm: 0,
                     health: 100,
-                    limit: 100,
+                    limit: 20,
                     potion: 10,
                     trash: 0,
                     wood: 0,
