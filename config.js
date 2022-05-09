@@ -45,9 +45,9 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 // kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
 global.sig = 'https://instagram.com/rnaldi.w'
 global.sgh = 'https://github.com/kannachann'
-global.sgc = 'https://chat.whatsapp.com/DOSPtlpelDCI8omlamrBJy'
+global.sgc = 'https://chat.whatsapp.com/LAoSSFoWV3I5KgS78vdowa'
 global.sdc = 'https://discord.gg/52Ckc7FME8'
-global.snh = 'https://nhentai.net/g/365296/'
+global.snh = 'Xylrnd Bot Whatsapp'
 
 /*============== PAYMENT ==============*/
 global.pdana = '085251626154'
